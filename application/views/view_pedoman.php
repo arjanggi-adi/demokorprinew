@@ -10,7 +10,7 @@
             <div class="container">
                 <div class="soon-content">
                     <div class="text">
-                        <h2>We are coming soon</h2>
+                        <h2>We are coming</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem
                             Ipsum has been the industry's standard dummy text</p>
                     </div>
