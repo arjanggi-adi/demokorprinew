@@ -1,0 +1,33 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+
+ERROR - 2022-01-24 22:22:42 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:22:42 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:22:42 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:22:57 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:22:57 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:23:26 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:23:26 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:23:26 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:00 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:00 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:00 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:03 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:03 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:03 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:12 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:12 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:19 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:19 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:23 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:23 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:32 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:32 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:40 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:40 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:56 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:24:56 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:25:42 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:25:42 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:25:46 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:25:46 --> 404 Page Not Found: Assets/libs
+ERROR - 2022-01-24 22:25:46 --> 404 Page Not Found: Assets/libs
