@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Struktur extends CI_Controller
+class Download extends CI_Controller
 {
 
     function __construct()
@@ -29,7 +29,7 @@ class Struktur extends CI_Controller
 
         $this->load->view('frontend/template2/head', $header);
         $this->load->view('frontend/template2/header', $header);
-        $this->load->view('view_struktur');
+        $this->load->view('view_download');
         $this->load->view('frontend/template2/footer');
     }
 

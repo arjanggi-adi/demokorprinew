@@ -5,7 +5,7 @@
                 <div class="nav-inner">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand" href="<?= base_url('') ?>">
-                            <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="Logo">
+                            <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="Logo" style="width: 130px;">
                         </a>
                         <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon"></span>
@@ -24,6 +24,9 @@
                                 <li class="nav-item"><a <?php if ($this->uri->segment(2) == "page") {
                                                             echo 'class="active"';
                                                         } ?> href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a></li>
+                                <li class="nav-item"><a <?php if ($this->uri->segment(1) == "download") {
+                                                            echo 'class="active"';
+                                                        } ?> href="<?php echo base_url(); ?>download">Download</a></li>
                                 <li class="nav-item"><a <?php if ($this->uri->segment(1) == "contact") {
                                                             echo 'class="active"';
                                                         } ?> href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>

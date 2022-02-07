@@ -36,10 +36,10 @@ class Model_home extends CI_Model
     public function get_team_member_data()
     {
         $query = $this->db->query("SELECT * 
-                            FROM tbl_team_member t1
-                            JOIN tbl_designation t2
-                            ON t1.designation_id = t2.designation_id
-                            WHERE t2.designation_id=2");
+                                FROM tbl_team_member t1
+                                JOIN tbl_designation t2
+                                ON t1.designation_id = t2.designation_id
+                                ORDER BY t1.id asc");
         return $query->result_array();
     }
 
@@ -52,6 +52,24 @@ class Model_home extends CI_Model
                                 ORDER BY t1.id limit 2");
         return $query->result_array();
     }
+
+    public function get_team_id($id)
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_designation');
+        $this->db->where('designation_id', $id);
+        $this->db->get()->row();
+    }
+
+    public function get_team_member($id)
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_team_member');
+        $this->db->join('tbl_designation', 'tbl_designation.designation_id = tbl_team_member.designation_id', 'left');
+        $this->db->where('tbl_team_member.designation_id', $id);
+        $this->db->get()->result();
+    }
+
     public function get_testimonial_data()
     {
         $query = $this->db->query("SELECT * from tbl_testimonial ORDER BY id ASC");

@@ -7879,8 +7879,8 @@ ul.custom-flex {
 }
 
 .topic li {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     border-radius: 4px;
     border: 1px solid #ccc;
 }
@@ -7891,12 +7891,22 @@ ul.custom-flex {
 
 .topic li a {
     font-size: 12px;
-    color: #666;
+    color: #0d1752;
     text-align: center;
     text-decoration: none;
     opacity: 0.8;
     font-weight: 700;
 }
+
+.topic li p {
+    font-size: 10px;
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
 
 .sl-nav {
     display: inline;

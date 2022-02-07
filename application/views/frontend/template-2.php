@@ -37,7 +37,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="nav-inner">
                     <nav class="navbar navbar-expand-lg">
                         <a class="navbar-brand" href="<?= base_url('') ?>">
-                            <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="Logo">
+                            <img src="<?php echo base_url(); ?>public/uploads/<?php echo $setting['logo']; ?>" alt="Logo" style="width: 130px;">
                         </a>
                         <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="toggler-icon"></span>
@@ -53,6 +53,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <li class="nav-item"><a href="<?php echo base_url(); ?>portfolio">Event</a></li>
                                 <!-- <li><a href="<?php echo base_url(); ?>testimonial"><?php echo TESTIMONIAL; ?></a></li> -->
                                 <li class="nav-item"><a href="<?php echo base_url(); ?>news/page"><?php echo NEWS; ?></a></li>
+                                <li class="nav-item"><a href="<?php echo base_url(); ?>download">Download</a></li>
                                 <li class="nav-item"><a href="<?php echo base_url(); ?>contact"><?php echo CONTACT; ?></a></li>
                             </ul>
                             <div class="sl-nav" style="margin-left: 40px;">
@@ -60,12 +61,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <li>English <i class="fa fa-angle-down" aria-hidden="true"></i>
                                         <div class="triangle"></div>
                                         <ul>
-                                            <li><i class="sl-flag flag-idn">
-                                                    <div id="germany"></div>
+                                            <li><i class="sl-flag flag-eng">
+                                                    <div id="english"></div>
                                                 </i> <span class="active">English</span></li>
-                                            <li><i class="sl-flag flag-usa">
-                                                    <div id="germany"></div>
-                                                </i> <span>Indonesia</span></li>
+                                            <li><i class="sl-flag flag-ind">
+                                                    <div id="indonesia"></div>
+                                                </i> <span class="active">Indonesia</span></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -167,7 +168,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <p class="qote wow fadeInUp" data-wow-delay=".8s">Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit, do eius mod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <div class="button wow fadeInUp" data-wow-delay="1s">
-                            <a href="about-us.html" class="btn">Read More</a>
+                            <a href="<?= base_url('about') ?>" class="btn">Read More</a>
                             <a href="https://www.youtube.com/watch?v=X3LTTS9eR-c" class="glightbox video btn"> Play Video<i class="lni lni-play"></i></a>
                         </div>
                     </div>
@@ -234,7 +235,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-12">
                     <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
-                        <h3 class="counter"><span id="secondo1" class="countup" cup-end="<?php echo $setting['counter1_value']; ?>"><?php echo $setting['counter1_value']; ?></span></h3>
+                        <h3 class="counter"><span id="secondo1" class="countup" cup-end="<?php echo $setting['counter1_value']; ?>"><?php echo $setting['counter1_value']; ?></span>M</h3>
                         <h4><?php echo $setting['counter1_text']; ?></h4>
                     </div>
                 </div>

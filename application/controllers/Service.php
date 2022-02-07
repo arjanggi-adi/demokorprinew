@@ -19,6 +19,7 @@ class Service extends CI_Controller
 		$header['social'] = $this->Model_common->get_social_data();
 		$header['language'] = $this->Model_common->get_language_data();
 		$header['latest_news'] = $this->Model_common->get_latest_news();
+		$header['latest_news_footer'] = $this->Model_common->get_latest_news_footer();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
 		$header['service'] = $this->Model_service->get_service_data();
@@ -36,14 +37,16 @@ class Service extends CI_Controller
 		$header['social'] = $this->Model_common->get_social_data();
 		$header['language'] = $this->Model_common->get_language_data();
 		$header['latest_news'] = $this->Model_common->get_latest_news();
+		$header['latest_news_footer'] = $this->Model_common->get_latest_news_footer();
 		$header['popular_news'] = $this->Model_common->get_popular_news();
 
 		$header['service_by_heading'] = $this->Model_service->get_service_data_order_by_heading();
 
 		$data['res'] = $this->Model_service->get_service_detail($id);
 
-		$this->load->view('frontend/template/head', $header);
+		$this->load->view('frontend/template2/head', $header);
+		$this->load->view('frontend/template2/header', $header);
 		$this->load->view('view_service_detail', $data);
-		$this->load->view('frontend/template/footer');
+		$this->load->view('frontend/template2/footer');
 	}
 }

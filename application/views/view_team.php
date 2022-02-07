@@ -53,8 +53,7 @@
 
 
                                         <ul class="social">
-                                            <a id="detail" class="btn" data-bs-toggle="modal" data-bs-target="#<?php echo $row['designation_id'] ?>" data-name="<?php echo $row['name']; ?>" data-designation_name="<?php echo $row['designation_name']; ?>" data-photo="<?php echo $row['photo']; ?>">Lihat anggota
-                                            </a>
+                                            <a href="<?= base_url('team/detil/' . $row['designation_id']) ?>" class="btn">Lihat anggota</a>
                                         </ul>
 
                                     </div>
@@ -67,5 +66,3 @@
         </div>
     </section>
 <?php endif; ?>
-
-<?php include('frontend/modal/modalteam.php'); ?>

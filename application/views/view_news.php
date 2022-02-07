@@ -96,26 +96,6 @@
 									<span class="time"><i class="lni lni-calendar"></i> 05th Nov 2023</span>
 								</div>
 							</div>
-							<div class="single-popular-feed">
-								<div class="feed-img">
-									<a href="blog-single.html"><img src="assets/images/blog/blog-sidebar2.jpg" alt="#"></a>
-								</div>
-								<div class="feed-desc">
-									<h6 class="post-title"><a href="blog-single.html">How to Study Online Courses Effectively</a>
-									</h6>
-									<span class="time"><i class="lni lni-calendar"></i> 24th March 2023</span>
-								</div>
-							</div>
-							<div class="single-popular-feed">
-								<div class="feed-img">
-									<a href="blog-single.html"><img src="assets/images/blog/blog-sidebar3.jpg" alt="#"></a>
-								</div>
-								<div class="feed-desc">
-									<h6 class="post-title"><a href="blog-single.html">How To Find The Right Courses for you.</a>
-									</h6>
-									<span class="time"><i class="lni lni-calendar"></i> 30th Jan 2023</span>
-								</div>
-							</div>
 						</div>
 					</div>
 
@@ -125,18 +105,6 @@
 						<ul class="custom">
 							<li>
 								<a href="javascript:void(0)">College <span>05</span></a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">Online Education <span>10</span></a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">Programming <span>25</span></a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">Online Course <span>15</span></a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">University <span>35</span></a>
 							</li>
 						</ul>
 					</div>

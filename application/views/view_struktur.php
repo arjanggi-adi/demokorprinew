@@ -32,5 +32,12 @@
         <div class="row">
             <img src="<?= base_url('frontend/template2/images/icon/struktur.jpg') ?>" alt="" class="">
         </div>
+        <div class="row align-center mt-4">
+            <div class="col-12">
+                <div class="button">
+                    <a href="<?= base_url('struktur/download') ?>" class="btn">Download</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

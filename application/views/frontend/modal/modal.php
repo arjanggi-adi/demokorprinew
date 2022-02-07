@@ -1,7 +1,7 @@
 <div class="modal fade" id="sajianModal" tabindex="-1" aria-labelledby="sajianModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header" style="background: #b30000;">
+            <div class="modal-header" style="background: #0d1752;">
                 <h5 class="modal-title text-white" id="sajianModalLabel">Organisasi</h5>
             </div>
             <div class="modal-body">
@@ -54,7 +54,7 @@
 <div class="modal fade" id="unitModal" tabindex="-1" aria-labelledby="unitModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header" style="background: #b30000;">
+            <div class="modal-header" style="background: #0d1752;">
                 <h5 class="modal-title text-white" id="unitModalLabel">Unit Pelaksana Kegiatan</h5>
             </div>
             <div class="modal-body">
@@ -63,36 +63,46 @@
                         <a href="http://www.warmadewa.ac.id/" class="d-flex flex-column" target="_blank">
                             <img src="<?= base_url('frontend/template2/images/icon/unwar.png'); ?>" class="mb-3 mx-auto" alt="" width="80px">
                             Universitas Warmadewa
+                            <br>
+                            <p>Universitas Warmadewa atau biasa disingkat Unwar merupakan salah satu perguruan tinggi di Denpasar, Bali.</p>
                         </a>
                     </li>
                     <li class="d-flex justify-content-center align-items-center m-2">
                         <a href="http://www.puriraharjahospital.ac.id/" class="d-flex flex-column" target="_blank">
                             <img src="<?= base_url('frontend/template2/images/icon/logo_rspr.jpg'); ?>" class="mb-3 mx-auto" alt="" width="80px">
                             RS Puri Raharja
+                            <br>
+                            <p>RSU Puri Raharja merupakan salah satu rumah sakit swasta yang awalnya merupakan rumah bersalin yang didirikan pada tahun 1972.</p>
                         </a>
                     </li>
                     <li class="d-flex justify-content-center align-items-center m-2">
                         <a href="http://www.klinikwarmadewa.com/" class="d-flex flex-column" target="_blank">
                             <img src="<?= base_url('frontend/template2/images/icon/KLINIK_WARMADEWA.png'); ?>" class="mb-3 mx-auto" alt="" width="80px">
                             Klinik Warmadewa
+                            <br>
+                            <p>Klinik Pratama Warmadewa ini merupakan Klinik Pratama Rawat Jalan yang menyediakan layanan umum, gigi dan mulut, farmasi, laboratorium sederhana.</p>
                         </a>
                     </li>
                     <li class="d-flex justify-content-center align-items-center m-2">
                         <a href="http://www.warmadewaproperty.com/" class="d-flex flex-column" target="_blank">
                             <img src="<?= base_url('frontend/template2/images/icon/property.png'); ?>" class="mb-3 mx-auto" alt="" width="80px">
                             Warmadewa Property
+                            <br>
+                            <p>Universitas Warmadewa atau biasa disingkat Unwar merupakan salah satu perguruan tinggi di Denpasar, Bali.</p>
                         </a>
                     </li>
                     <li class="d-flex justify-content-center align-items-center m-2">
                         <a href="http://www.warmadewacollege.com/" class="d-flex flex-column" target="_blank">
                             <img src="<?= base_url('frontend/template2/images/icon/college.png') ?>" class="mb-3 mx-auto" alt="" width="80px">
                             Warmadewa College
+                            <br>
+                            <p>Universitas Warmadewa atau biasa disingkat Unwar merupakan salah satu perguruan tinggi di Denpasar, Bali.</p>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
             </div>
         </div>
     </div>
