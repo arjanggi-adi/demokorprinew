@@ -313,20 +313,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <?php if ($setting['team_status'] == 'Show') : ?>
     <section id="teachers" class="teachers section">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title align-center gray-bg">
-                        <div class="section-icon wow zoomIn" data-wow-delay=".4s">
-                            <i class="lni lni-users"></i>
-                        </div>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s"><?php echo $setting['team_title']; ?></h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s"><?php echo $setting['team_subtitle']; ?></p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
+            <div class="row mb-4">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="single-team wow fadeInUp" data-wow-delay=".2s">
                         <div class="row">
                             <div class="col-lg-5 col-12">
@@ -349,7 +338,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="single-team wow fadeInUp" data-wow-delay=".2s">
                         <div class="row">
                             <div class="col-lg-5 col-12">
@@ -372,13 +361,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="single-team wow fadeInUp" data-wow-delay=".2s">
                         <div class="row">
                             <div class="col-lg-5 col-12">
 
                                 <div class="image">
-                                    <img src="#" alt="#">
+                                    <img src="<?= base_url('frontend/template2/images/clients/dewan1.jpg') ?>" alt="#">
                                 </div>
 
                             </div>
@@ -395,7 +384,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="single-team wow fadeInUp" data-wow-delay=".2s">
                         <div class="row">
                             <div class="col-lg-5 col-12">
@@ -415,6 +404,17 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title align-center gray-bg">
+                        <div class="section-icon wow zoomIn" data-wow-delay=".4s">
+                            <i class="lni lni-users"></i>
+                        </div>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s"><?php echo $setting['team_title']; ?></h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s"><?php echo $setting['team_subtitle']; ?></p>
                     </div>
                 </div>
             </div>

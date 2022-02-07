@@ -14,7 +14,6 @@ if (!$this->session->userdata('id')) {
 					<li class="breadcrumb-item active"><a href="<?php echo base_url(); ?>admin/service/add" class="btn btn-primary btn-sm">Tambah</a></li>
 				</ol>
 			</div>
-
 		</div>
 	</div>
 </div>
@@ -46,7 +45,7 @@ if (!$this->session->userdata('id')) {
 								<td><?php echo $row['heading']; ?></td>
 								<td>
 									<a href="<?php echo base_url(); ?>admin/service/edit/<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
-									<a href="#" class="btn btn-danger btn-sm" data-href="<?php echo base_url(); ?>admin/service/delete/<?php echo $row['id']; ?>" data-bs-toggle="modal" data-bs-target="#confirm-delete">Delete</a>
+									<button class="btn btn-danger btn-sm btn-ok" data-href="<?php echo base_url(); ?>admin/service/delete/<?php echo $row['id']; ?>" data-bs-toggle="modal" data-bs-target="#confirm-delete">Delete</button>
 								</td>
 							</tr>
 						<?php

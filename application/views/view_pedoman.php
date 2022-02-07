@@ -1,54 +1,43 @@
-<div class="coming-soon">
-    <div class="verticle-lines">
-        <div class="vlines one"></div>
-        <div class="vlines two"></div>
-        <div class="vlines three"></div>
-        <div class="vlines four"></div>
-    </div>
-    <div class="d-table">
-        <div class="d-table-cell">
-            <div class="container">
-                <div class="soon-content">
-                    <div class="text">
-                        <h2>We are coming</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem
-                            Ipsum has been the industry's standard dummy text</p>
-                    </div>
-                    <div class="inner-content">
-                        <div class="box">
-                            <h1 id="days">000</h1>
-                            <h2 id="daystxt">Days</h2>
-                        </div>
-                        <div class="box">
-                            <h1 id="hours">00</h1>
-                            <h2 id="hourstxt">Hours</h2>
-                        </div>
-                        <div class="box">
-                            <h1 id="minutes">00</h1>
-                            <h2 id="minutestxt">Minutes</h2>
-                        </div>
-                        <div class="box">
-                            <h1 id="seconds">00</h1>
-                            <h2 id="secondstxt">Secondes</h2>
-                        </div>
-                    </div>
-                    <div style="background: rgb(204, 24, 24);" class="alert">
-                        <h1 style="padding: 50px 80px;color: white;">We are sorry, Event ended ! </h1>
-                    </div>
-
-                    <div class="social-links">
-                        <h3>Follow Us on</h3>
-                        <ul class="social">
-                            <li><a href="#"><i class="lni lni-facebook-original"></i></a></li>
-                            <li><a href="#"><i class="lni lni-twitter-original"></i></a></li>
-                            <li><a href="#"><i class="lni lni-instagram"></i></a></li>
-                            <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
-                            <li><a href="#"><i class="lni lni-google"></i></a></li>
-                        </ul>
-                    </div>
-
+<div class="breadcrumbs overlay">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                <div class="breadcrumbs-content">
+                    <h1 class="page-title">Pedoman Intergitas</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text</p>
                 </div>
+                <ul class="breadcrumb-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Teachers</li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
+
+
+<section id="teachers" class="teachers section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title align-center gray-bg">
+                    <span>Organisasi</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Pedoman Integritas</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s">There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered alteration in some form.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <img src="<?= base_url('frontend/template2/images/icon/pedoman1.jpg') ?>" alt="" class="">
+        </div>
+        <div class="row align-center mt-4">
+            <div class="col-12">
+                <div class="button">
+                    <a href="<?= base_url('pedoman/download') ?>" class="btn">Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

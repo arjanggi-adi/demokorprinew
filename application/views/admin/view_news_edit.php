@@ -1,27 +1,41 @@
 <?php
-if(!$this->session->userdata('id')) {
-	redirect(base_url().'admin/login');
+if (!$this->session->userdata('id')) {
+	redirect(base_url() . 'admin/login');
 }
 ?>
 
-<section class="content">
+<div class="row">
+	<div class="col-12">
+		<div class="page-title-box d-sm-flex align-items-center justify-content-between">
+			<h4 class="mb-sm-0 font-size-18">Partner</h4>
 
-	<div class="row">
-		<div class="col-md-12">
-
-			<?php if($error): ?>
-			<div class="callout callout-danger">			
-			<p><?php echo $error; ?></p>
+			<div class="page-title-right">
+				<ol class="breadcrumb m-0">
+					<li class="breadcrumb-item active"><a href="<?php echo base_url(); ?>admin/news" class="btn btn-primary btn-sm">Tambah</a></li>
+				</ol>
 			</div>
-			<?php endif; ?>
+		</div>
+	</div>
+</div>
 
-			<?php if($success): ?>
-			<div class="callout callout-success">			
-			<p><?php echo $success; ?></p>
-			</div>
-			<?php endif; ?>
+<div class="row">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
 
-			<?php echo form_open_multipart(base_url().'admin/news/edit/'.$news['news_id'],array('class' => 'form-horizontal')); ?>
+				<?php if ($error) : ?>
+					<div class="callout callout-danger">
+						<p><?php echo $error; ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php if ($success) : ?>
+					<div class="callout callout-success">
+						<p><?php echo $success; ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php echo form_open_multipart(base_url() . 'admin/news/edit/' . $news['news_id'], array('class' => 'form-horizontal')); ?>
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
@@ -48,69 +62,75 @@ if(!$this->session->userdata('id')) {
 								<input type="text" class="form-control" name="news_date" id="datepicker" value="<?php echo $news['news_date']; ?>">(Format: yy-mm-dd)
 							</div>
 						</div>
-						
-						<div class="form-group">
-				            <label for="" class="col-sm-2 control-label">Categories <span>*</span></label>
-				            <div class="col-sm-3">
-				            	<select class="form-control select2" name="category_id">
-								<?php
-				            	$i=0;
-				            	foreach ($all_category as $row) {
-									?>
-									<option value="<?php echo $row['category_id']; ?>" <?php if($row['category_id']==$news['category_id']){echo 'selected';} ?>><?php echo $row['category_name']; ?></option>
-	                                <?php
-								}
-								?>
-								</select>
-				            </div>
-				        </div>
 
-				        <div class="form-group">
-				            <label for="" class="col-sm-2 control-label">Comment <span>*</span></label>
-				            <div class="col-sm-3">
-				            	<select class="form-control select2" name="comment">
-									<option value="On" <?php if($news['comment'] == 'On') {echo 'selected';} ?>>On</option>
-									<option value="Off" <?php if($news['comment'] == 'Off') {echo 'selected';} ?>>Off</option>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Categories <span>*</span></label>
+							<div class="col-sm-3">
+								<select class="form-control select2" name="category_id">
+									<?php
+									$i = 0;
+									foreach ($all_category as $row) {
+									?>
+										<option value="<?php echo $row['category_id']; ?>" <?php if ($row['category_id'] == $news['category_id']) {
+																								echo 'selected';
+																							} ?>><?php echo $row['category_name']; ?></option>
+									<?php
+									}
+									?>
 								</select>
-				            </div>
-				        </div>
-				        <h3 class="seo-info">Photo and Banner</h3>
-				        <div class="form-group">
-				            <label for="" class="col-sm-2 control-label">Existing Featured Photo</label>
-				            <div class="col-sm-6" style="padding-top:6px;">
-				            	<?php
-				            	if($news['photo'] == '') {
-				            		echo 'No photo found';
-				            	} else {
-				            		?><img src="<?php echo base_url(); ?>public/uploads/<?php echo $news['photo']; ?>" alt="<?php echo $news['news_title']; ?>" class="existing-photo" style="width:140px;"><?php
-				            	}
-				            	?>
-				            </div>
-				        </div>
+							</div>
+						</div>
+
 						<div class="form-group">
-				            <label for="" class="col-sm-2 control-label">Change Featured Photo</label>
-				            <div class="col-sm-6" style="padding-top:6px;">
-				                <input type="file" name="photo">
-				            </div>
-				        </div>
-				        <div class="form-group">
-				            <label for="" class="col-sm-2 control-label">Existing Banner</label>
-				            <div class="col-sm-6" style="padding-top:6px;">
-				            	<?php
-				            	if($news['banner'] == '') {
-				            		echo 'No photo found';
-				            	} else {
-				            		?><img src="<?php echo base_url(); ?>public/uploads/<?php echo $news['banner']; ?>" alt="<?php echo $news['news_title']; ?>" class="existing-photo" style="width:300px;"><?php
-				            	}
-				            	?>
-				            </div>
-				        </div>
+							<label for="" class="col-sm-2 control-label">Comment <span>*</span></label>
+							<div class="col-sm-3">
+								<select class="form-control select2" name="comment">
+									<option value="On" <?php if ($news['comment'] == 'On') {
+															echo 'selected';
+														} ?>>On</option>
+									<option value="Off" <?php if ($news['comment'] == 'Off') {
+															echo 'selected';
+														} ?>>Off</option>
+								</select>
+							</div>
+						</div>
+						<h3 class="seo-info">Photo and Banner</h3>
 						<div class="form-group">
-				            <label for="" class="col-sm-2 control-label">Change Banner</label>
-				            <div class="col-sm-6" style="padding-top:6px;">
-				                <input type="file" name="banner">
-				            </div>
-				        </div>
+							<label for="" class="col-sm-2 control-label">Existing Featured Photo</label>
+							<div class="col-sm-6" style="padding-top:6px;">
+								<?php
+								if ($news['photo'] == '') {
+									echo 'No photo found';
+								} else {
+								?><img src="<?php echo base_url(); ?>public/uploads/<?php echo $news['photo']; ?>" alt="<?php echo $news['news_title']; ?>" class="existing-photo" style="width:140px;"><?php
+																																																	}
+																																																		?>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Change Featured Photo</label>
+							<div class="col-sm-6" style="padding-top:6px;">
+								<input type="file" name="photo">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Existing Banner</label>
+							<div class="col-sm-6" style="padding-top:6px;">
+								<?php
+								if ($news['banner'] == '') {
+									echo 'No photo found';
+								} else {
+								?><img src="<?php echo base_url(); ?>public/uploads/<?php echo $news['banner']; ?>" alt="<?php echo $news['news_title']; ?>" class="existing-photo" style="width:300px;"><?php
+																																																		}
+																																																			?>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">Change Banner</label>
+							<div class="col-sm-6" style="padding-top:6px;">
+								<input type="file" name="banner">
+							</div>
+						</div>
 						<h3 class="seo-info">SEO Information</h3>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Meta Title </label>
@@ -138,8 +158,8 @@ if(!$this->session->userdata('id')) {
 						</div>
 					</div>
 				</div>
-			<?php echo form_close(); ?>
+				<?php echo form_close(); ?>
+			</div>
 		</div>
 	</div>
-
-</section>
+</div>

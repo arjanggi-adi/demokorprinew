@@ -9,6 +9,7 @@ class Pedoman extends CI_Controller
         parent::__construct();
         $this->load->model('Model_common');
         $this->load->model('Model_about');
+        $this->load->helper('download');
     }
 
     public function index()
@@ -26,9 +27,14 @@ class Pedoman extends CI_Controller
 
         // $this->load->view('view_footer');
 
-        // $this->load->view('frontend/template2/head', $header);
-        // $this->load->view('frontend/template2/header', $header);
-        $this->load->view('frontend/template2/coming');
-        // $this->load->view('frontend/template2/footer');
+        $this->load->view('frontend/template2/head', $header);
+        $this->load->view('frontend/template2/header', $header);
+        $this->load->view('view_pedoman');
+        $this->load->view('frontend/template2/footer');
+    }
+
+    public function download()
+    {
+        force_download('frontend/template2/images/icon/pedoman1.jpg', NULL);
     }
 }

@@ -1,38 +1,42 @@
 <?php
-if(!$this->session->userdata('id')) {
-	redirect(base_url().'admin/login');
+if (!$this->session->userdata('id')) {
+	redirect(base_url() . 'admin/login');
 }
 ?>
 
-<section class="content-header">
-	<div class="content-header-left">
-		<h1>Edit Team Member</h1>
-	</div>
-	<div class="content-header-right">
-		<a href="<?php echo base_url(); ?>admin/team-member" class="btn btn-primary btn-sm">View All</a>
-	</div>
-</section>
+<div class="row">
+	<div class="col-12">
+		<div class="page-title-box d-sm-flex align-items-center justify-content-between">
+			<h4 class="mb-sm-0 font-size-18">Team</h4>
 
-<section class="content">
-
-	<div class="row">
-		<div class="col-md-12">
-
-			<?php if($error): ?>
-			<div class="callout callout-danger">
-			<p>
-			<?php echo $error; ?>
-			</p>
+			<div class="page-title-right">
+				<ol class="breadcrumb m-0">
+					<li class="breadcrumb-item active"><a href="<?php echo base_url(); ?>admin/team-member" class="btn btn-primary btn-sm">Tambah</a></li>
+				</ol>
 			</div>
-			<?php endif; ?>
+		</div>
+	</div>
+</div>
 
-			<?php if($success): ?>
-			<div class="callout callout-success">
-			<p><?php echo $success; ?></p>
-			</div>
-			<?php endif; ?>
+<div class="row">
+	<div class="col-12">
+		<div class="card">
+			<div class="card-body">
+				<?php if ($error) : ?>
+					<div class="callout callout-danger">
+						<p>
+							<?php echo $error; ?>
+						</p>
+					</div>
+				<?php endif; ?>
 
-			<?php echo form_open_multipart(base_url().'admin/team-member/edit/'.$team_member['id'],array('class' => 'form-horizontal')); ?>
+				<?php if ($success) : ?>
+					<div class="callout callout-success">
+						<p><?php echo $success; ?></p>
+					</div>
+				<?php endif; ?>
+
+				<?php echo form_open_multipart(base_url() . 'admin/team-member/edit/' . $team_member['id'], array('class' => 'form-horizontal')); ?>
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
@@ -42,20 +46,22 @@ if(!$this->session->userdata('id')) {
 							</div>
 						</div>
 						<div class="form-group">
-				            <label for="" class="col-sm-2 control-label">Select Designation <span>*</span></label>
-				            <div class="col-sm-3">
-				            	<select class="form-control select2" name="designation_id" style="width:300px;">
-								<?php
-				            	$i=0;
-				            	foreach ($all_designation as $row) {
+							<label for="" class="col-sm-2 control-label">Select Designation <span>*</span></label>
+							<div class="col-sm-3">
+								<select class="form-control select2" name="designation_id" style="width:300px;">
+									<?php
+									$i = 0;
+									foreach ($all_designation as $row) {
 									?>
-									<option value="<?php echo $row['designation_id']; ?>" <?php if($row['designation_id']==$team_member['designation_id']){echo 'selected';} ?>><?php echo $row['designation_name']; ?></option>
-	                                <?php
-								}
-								?>
+										<option value="<?php echo $row['designation_id']; ?>" <?php if ($row['designation_id'] == $team_member['designation_id']) {
+																									echo 'selected';
+																								} ?>><?php echo $row['designation_name']; ?></option>
+									<?php
+									}
+									?>
 								</select>
-				            </div>
-				        </div>
+							</div>
+						</div>
 						<div class="form-group">
 							<label for="" class="col-sm-2 control-label">Existing Photo</label>
 							<div class="col-sm-9" style="padding-top:5px">
@@ -118,8 +124,8 @@ if(!$this->session->userdata('id')) {
 						</div>
 					</div>
 				</div>
-			<?php echo form_close(); ?>
+				<?php echo form_close(); ?>
+			</div>
 		</div>
 	</div>
-
-</section>
+</div>

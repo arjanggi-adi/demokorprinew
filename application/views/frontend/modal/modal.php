@@ -68,11 +68,11 @@
                         </a>
                     </li>
                     <li class="d-flex justify-content-center align-items-center m-2">
-                        <a href="http://www.puriraharjahospital.ac.id/" class="d-flex flex-column" target="_blank">
-                            <img src="<?= base_url('frontend/template2/images/icon/logo_rspr.jpg'); ?>" class="mb-3 mx-auto" alt="" width="80px">
-                            RS Puri Raharja
+                        <a href="#" class="d-flex flex-column" target="_blank">
+                            <img src="<?= base_url('frontend/template2/images/icon/SMK_TARUNA_WARMADEWA.png'); ?>" class="mb-3 mx-auto" alt="" width="80px">
+                            SMK Taruna Warmadewa
                             <br>
-                            <p>RSU Puri Raharja merupakan salah satu rumah sakit swasta yang awalnya merupakan rumah bersalin yang didirikan pada tahun 1972.</p>
+                            <p>SMK Taruna Warmadewa merupakan salah satu Unit Pelaksana Kegiatan (UPK) yang bernaung dibawah Yayasan Kesejahteraan Korpri Propinsi Bali.</p>
                         </a>
                     </li>
                     <li class="d-flex justify-content-center align-items-center m-2">
@@ -85,10 +85,10 @@
                     </li>
                     <li class="d-flex justify-content-center align-items-center m-2">
                         <a href="http://www.warmadewaproperty.com/" class="d-flex flex-column" target="_blank">
-                            <img src="<?= base_url('frontend/template2/images/icon/property.png'); ?>" class="mb-3 mx-auto" alt="" width="80px">
+                            <img src="<?= base_url('frontend/template2/images/icon/property.png'); ?>" class="mb-3 mx-auto" alt="" width="60px">
                             Warmadewa Property
                             <br>
-                            <p>Universitas Warmadewa atau biasa disingkat Unwar merupakan salah satu perguruan tinggi di Denpasar, Bali.</p>
+                            <p>Warmadewa Property merupakan salah satu Unit Pelaksana Kegiatan (UPK) yang bernaung dibawah Yayasan Kesejahteraan Korpri Propinsi Bali.</p>
                         </a>
                     </li>
                     <li class="d-flex justify-content-center align-items-center m-2">
@@ -96,7 +96,15 @@
                             <img src="<?= base_url('frontend/template2/images/icon/college.png') ?>" class="mb-3 mx-auto" alt="" width="80px">
                             Warmadewa College
                             <br>
-                            <p>Universitas Warmadewa atau biasa disingkat Unwar merupakan salah satu perguruan tinggi di Denpasar, Bali.</p>
+                            <p>Warmadewa College merupakan salah satu Unit Pelaksana Kegiatan (UPK) yang bernaung dibawah Yayasan Kesejahteraan Korpri Propinsi Bali.</p>
+                        </a>
+                    </li>
+                    <li class="d-flex justify-content-center align-items-center m-2">
+                        <a href="#" class="d-flex flex-column" target="_blank">
+                            <img src="<?= base_url('frontend/template2/images/icon/LOGO PAUD_KUMARA_WARMADEWA.png') ?>" class="mb-3 mx-auto" alt="" width="80px">
+                            Paud Kumara Warmadewa
+                            <br>
+                            <p>Paud Kumara Warmadewa merupakan salah satu Unit Pelaksana Kegiatan (UPK) yang bernaung dibawah Yayasan Kesejahteraan Korpri Propinsi Bali.</p>
                         </a>
                     </li>
                 </ul>
